@@ -1,0 +1,105 @@
+@font-face {
+    font-family:myFont;
+    src: url(FONTS/RobotoMono-VariableFont_wght.ttf)
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+    background: #f1f1f1;
+    font-size: 20px;
+    font-family: Trebuchet MS, sans-serif;
+    line-height: 30px;
+  }
+  
+  h2 {
+    font-family: "myFont";
+    color: rgb(69, 69, 69);
+}
+
+/* Header Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, rgb(166, 246, 244), rgb(247, 215, 234));
+  font-family: "myFont";
+  color: rgb(69, 69, 69);
+}
+
+.header h1 {
+    font-size: 50px;
+    font-family: "myFont";
+  
+  }
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(69, 69, 69);
+    font-family: "myFont";
+    font-size: 20px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(69, 69, 69);
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(247, 215, 234), rgb(166, 246, 244));
+    margin-top: 20px;
+  }
+
+  /* gallery */
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 30%;
+    padding: 10 10 0px;
+  }
+  
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 25%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
